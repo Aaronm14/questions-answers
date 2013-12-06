@@ -6,9 +6,9 @@
     <%= f.input :last_name %>
     <%= f.input :email %>
     <div class="question-container">
-      <%= f.input :answer1, rows:10, label: 'What''s the coolest problem you''ve solved that''s applicable to the role you''d like to have with FoodLogiQ? Why should we think it''s cool, too?' %>
-      <%= f.input :answer2, label: 'Describe the environment that would exist at your dream job.  The culture, people, office, tools, etc.  whatever details you think would make it awesome.  Don''t worry about trying to describe us so we think you think we''re your dream employer;  we''re more interested in you, not us.' %>
-      <%= f.input :answer3, label: 'What design and development assumptions and decisions went into your solution for Step 1?' %>
+      <%= f.input :answer1, rows:10, label: @question1.content %>
+      <%= f.input :answer2, label: @question2.content %>
+      <%= f.input :answer3, label: @question3.content %>
     </div>
   </div>
 

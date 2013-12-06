@@ -3,9 +3,11 @@
 
   <div class="form-inputs">
     <%= f.input :content %>
+    <%= f.input :number %>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, class:'btn btn-success' %>
   </div>
 <% end %>
+<p class="question-warning">Please note: Only 3 questions will be used, and if you want to replace a question and have it show up, please delete the existing question with the corresponding number</p>

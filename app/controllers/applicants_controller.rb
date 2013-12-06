@@ -10,15 +10,25 @@ class ApplicantsController < ApplicationController
   # GET /applicants/1
   # GET /applicants/1.json
   def show
+    @question1 = Question.where(:number => 1).first
+    @question2 = Question.where(:number => 2).first
+    @question3 = Question.where(:number => 3).first
   end
 
   # GET /applicants/new
   def new
     @applicant = Applicant.new
+
+    @question1 = Question.where(:number => 1).first
+    @question2 = Question.where(:number => 2).first
+    @question3 = Question.where(:number => 3).first
   end
 
   # GET /applicants/1/edit
   def edit
+    @question1 = Question.where(:number => 1).first
+    @question2 = Question.where(:number => 2).first
+    @question3 = Question.where(:number => 3).first
   end
 
   # POST /applicants

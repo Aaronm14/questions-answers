@@ -2,6 +2,8 @@
 
 one:
   content: MyText
+  number: 1
 
 two:
   content: MyText
+  number: 1

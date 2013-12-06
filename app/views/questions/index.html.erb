@@ -1,9 +1,10 @@
-<h1>Listing questions</h1>
-
-<table>
+<h1>Questions</h1>
+<div class="background">
+<table class="table table-hover">
   <thead>
     <tr>
       <th>Content</th>
+      <th>Number</th>
       <th></th>
       <th></th>
       <th></th>
@@ -14,14 +15,15 @@
     <% @questions.each do |question| %>
       <tr>
         <td><%= question.content %></td>
-        <td><%= link_to 'Show', question %></td>
-        <td><%= link_to 'Edit', edit_question_path(question) %></td>
-        <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= question.number %></td>
+        <td><%= link_to 'Show', question, class:'btn btn-success' %></td>
+        <td><%= link_to 'Edit', edit_question_path(question), class:'btn btn-primary' %></td>
+        <td><%= link_to 'Delete', question, class:'btn btn-danger', method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<br>
+<p class="question-warning">Please note: Only 3 questions will be used, and if you want to replace a question and have it show up, please delete the existing question with the corresponding number</p>
 
-<%= link_to 'New Question', new_question_path %>
+<%= link_to 'New Question', new_question_path, class:'btn btn-success' %>

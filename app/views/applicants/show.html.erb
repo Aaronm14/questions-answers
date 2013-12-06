@@ -2,7 +2,6 @@
   <div class="background">
 
 <p id="notice"><%= notice %></p>
-
 <p>
   <strong>First name:</strong>
   <%= @applicant.first_name %>
@@ -19,17 +18,17 @@
 </p>
 
 <p>
-  <strong>Answer1:</strong>
+  <strong><%= @question1.content %></strong>
   <%= @applicant.answer1 %>
 </p>
 
 <p>
-  <strong>Answer2:</strong>
+  <strong><%= @question2.content %></strong>
   <%= @applicant.answer2 %>
 </p>
 
 <p>
-  <strong>Answer3:</strong>
+  <strong><%= @question3.content %></strong>
   <%= @applicant.answer3 %>
 </p>
 

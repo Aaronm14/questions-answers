@@ -21,7 +21,7 @@ h1 {
      margin-top:0 !important;
 }
 header {
-     display:none !important;
+
 }
 body {
      background: url('http://www.bkcareers.com/images/body-bg-ordinary.jpg');
@@ -39,7 +39,7 @@ body {
 .background {
      padding:10px;
      background: rgba(255, 255, 255, 0.8);
-     min-height:200px;
+     min-height:150px;
 }
 .form-actions {
      padding: 5px 15px 15px 0 !important;
@@ -89,8 +89,21 @@ a.btn {
      padding:10px 15px;
 }
 .home .background {
-     padding-top:50px;
-     min-height: 150px;
+     min-height: 120px;
+}
+.use-cases p {
+     font-size:18px; margin-bottom:25px
+}
+.use-cases {
+     display:inline-block;
+     line-height:60px;
+}
+.use1 {
+     width:44%;
+}
+.use2 {
+     width:55%;
+     border-left:1px solid #e5e5e5;
 }
 .table {
      border:1px solid #e7e7e7;
@@ -101,4 +114,10 @@ a.btn {
 }
 p strong {
      display:block;
+}
+p.question-warning {
+     color: red;
+     font-style: italic;
+     padding-left: 25px;
+     margin:10px 0;
 }
