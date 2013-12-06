@@ -1,4 +1,4 @@
-h1.Thought Process and Assumptions
+Thought Process and Assumptions
 
 When I first started planning this out, I ended up falling into the trap that I think a lot of programmers fall into: thinking about all of the features and things that could be added to make it awesome.  I even started off by building this application with no back-end using Firebase, which I realized isn't suited for this type of project.  It certainly made me more fully appreciate Ruby on Rails as a framework, which this app is built in.  I have no preference to which language I use, Ruby on Rails is just most familiar to me for building full applications, and it seemed to be the best tool for the job for me in this instance.
 
