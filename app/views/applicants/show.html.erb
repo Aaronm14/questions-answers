@@ -1,0 +1,38 @@
+  <h1><%= @applicant.first_name %> <%= @applicant.last_name %></h1>
+  <div class="background">
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @applicant.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @applicant.last_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @applicant.email %>
+</p>
+
+<p>
+  <strong>Answer1:</strong>
+  <%= @applicant.answer1 %>
+</p>
+
+<p>
+  <strong>Answer2:</strong>
+  <%= @applicant.answer2 %>
+</p>
+
+<p>
+  <strong>Answer3:</strong>
+  <%= @applicant.answer3 %>
+</p>
+
+<%= link_to 'Edit', edit_applicant_path(@applicant), class:'btn btn-primary' %> &nbsp;
+<%= link_to 'Back', applicants_path, class:'btn btn-warning' %>
+</div>

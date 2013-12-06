@@ -1,0 +1,39 @@
+<h1>Listing applicants</h1>
+
+<div class="background">
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>First</th>
+      <th>Last</th>
+      <th>Email</th>
+      <th>Answer #1</th>
+      <th>Answer #2</th>
+      <th>Answer #3</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @applicants.each do |applicant| %>
+      <tr>
+        <td><%= applicant.first_name %></td>
+        <td><%= applicant.last_name %></td>
+        <td><%= applicant.email %></td>
+        <td><div><%= truncate(applicant.answer1, legnth:15) %></div></td>
+        <td><div><%= truncate(applicant.answer2, legnth:15) %></div></td>
+        <td><div><%= truncate(applicant.answer3, legnth:15) %></div></td>
+        <td><%= link_to 'Show', applicant, class:'btn btn-success' %></td>
+        <td><%= link_to 'Edit', edit_applicant_path(applicant), class:'btn btn-primary' %></td>
+        <td><%= link_to 'Delete', applicant,  class:'btn btn-danger', method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Applicant', new_applicant_path, class:'btn btn-success' %>
+</div>

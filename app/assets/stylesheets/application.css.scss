@@ -11,3 +11,94 @@
  *= require_self
  *= require_tree .
  */
+
+h1 {
+     font-weight: bold;
+     font-size: 45px;
+     text-transform: uppercase;
+     text-shadow: 2px 2px 0px #999;
+     color: #fff !important;
+     margin-top:0 !important;
+}
+header {
+     display:none !important;
+}
+body {
+     background: url('http://www.bkcareers.com/images/body-bg-ordinary.jpg');
+}
+.container {
+     padding: 15px 20px 20px 20px;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     border-radius: 5px;
+     background: rgba(255, 255, 255, 0.2);
+     -webkit-box-shadow: 0 0 1px 0px #999;
+     box-shadow: 0 0 1px 0px #999;
+     overflow: auto;
+}
+.background {
+     padding:10px;
+     background: rgba(255, 255, 255, 0.8);
+     min-height:200px;
+}
+.form-actions {
+     padding: 5px 15px 15px 0 !important;
+     margin-top:10px !important;
+     background:none !important;
+     border-top:none !important;
+     border-bottom:2px solid #e5e5e5;
+}
+.form-actions .btn{
+     float:right;
+}
+.show-user, .show-admin {
+     cursor:pointer;
+     font-size:26px;
+     font-weight:bold;
+     margin-left:25px;
+     color:blue;
+}
+.admin-view {
+  display:none;
+}
+.user-view {
+  display:none;
+}
+.control-group.applicant_first_name, .control-group.applicant_last_name,
+.control-group.applicant_email {
+     display:inline-block;
+     width:33%;
+}
+.form-inputs textarea {
+     width:33%;
+     height:75px;
+}
+a.btn {
+     color:white !important;
+}
+.question-container {
+     padding-top:10px;
+     border-top:1px solid #e7e7e7;
+}
+.home {
+     text-align:center;
+}
+.home a {
+     font-size:18px;
+     margin:0 20px;
+     padding:10px 15px;
+}
+.home .background {
+     padding-top:50px;
+     min-height: 150px;
+}
+.table {
+     border:1px solid #e7e7e7;
+     margin-bottom:10px !important;
+}
+.table-hover tbody tr:hover > td, .table-hover tbody tr:hover > th {
+     background-color: #F3EEDE !important;
+}
+p strong {
+     display:block;
+}
