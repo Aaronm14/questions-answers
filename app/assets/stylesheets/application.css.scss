@@ -66,11 +66,11 @@ body {
 }
 .control-group.applicant_first_name, .control-group.applicant_last_name,
 .control-group.applicant_email {
-     display:inline-block;
-     width:33%;
+     float:left;
+     width:32%;
 }
 .form-inputs textarea {
-     width:33%;
+     width:75%;
      height:75px;
 }
 a.btn {

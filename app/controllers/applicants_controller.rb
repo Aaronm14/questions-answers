@@ -5,6 +5,10 @@ class ApplicantsController < ApplicationController
   # GET /applicants.json
   def index
     @applicants = Applicant.all
+
+    @question1 = Question.where(:number => 1).first
+    @question2 = Question.where(:number => 2).first
+    @question3 = Question.where(:number => 3).first
   end
 
   # GET /applicants/1
@@ -35,6 +39,9 @@ class ApplicantsController < ApplicationController
   # POST /applicants.json
   def create
     @applicant = Applicant.new(applicant_params)
+    @question1 = Question.where(:number => 1).first
+    @question2 = Question.where(:number => 2).first
+    @question3 = Question.where(:number => 3).first
 
     respond_to do |format|
       if @applicant.save
@@ -50,6 +57,10 @@ class ApplicantsController < ApplicationController
   # PATCH/PUT /applicants/1
   # PATCH/PUT /applicants/1.json
   def update
+    @question1 = Question.where(:number => 1).first
+    @question2 = Question.where(:number => 2).first
+    @question3 = Question.where(:number => 3).first
+
     respond_to do |format|
       if @applicant.update(applicant_params)
         format.html { redirect_to @applicant, notice: 'Applicant was successfully updated.' }
